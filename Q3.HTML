@@ -1,0 +1,33 @@
+<html>
+<head>
+   <style>
+   	.container{
+        width: 450px;
+        height: 350px;
+        border: 8px solid red;
+        position: relative;
+    }
+    .container img{
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .img-top{
+        display: none;   /* Hide top Image */
+        z-index: 99;
+    }
+
+    .container:hover .img-top{
+        display: inline;  /* Show top Image */
+    }
+   </style>
+</head>
+<body>
+	<h2>Hover Over the below Image:</h2>
+	<div class="container">
+    	<img src="https://th.bing.com/th/id/OIP.WKn4wWbSiuAUUOM8MT66sQHaEs?w=257&h=180&c=7&r=0&o=5&pid=1.7">
+        <img class="img-top" src="https://th.bing.com/th/id/OIP.sJJ_EJgCTieuLq9C2bub_QHaE5?w=253&h=180&c=7&r=0&o=5&pid=1.7g">
+    </div>
+</body>
+</html>
